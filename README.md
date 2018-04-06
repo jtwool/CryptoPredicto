@@ -25,9 +25,9 @@
  12. Bag of words [(bowAndTypes.py)](https://github.com/jtwool/CryptoPredicto/blob/master/bowAndTypes.py)
 
 ## Classification / Regression
-~~1. Arrange features into matrix with target data~~
-2. Pick a model (RNN?)
-3. Optimize model parameters
-4. Predict target data
-5. ???
-6. Profit!!
+  1. Arrange features into matrix with target data
+  2. Pick a model (RNN?)
+  3. Optimize model parameters
+  4. Predict target data
+  5. ???
+  6. Profit!!
