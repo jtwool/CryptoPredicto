@@ -1,6 +1,7 @@
 # CryptoPredicto
 
 __(c) 2018 - JT Wolohan and Logan Jastremski__
+
 _jwolohan@iu.edu and ljastrem@.iu.edu_
 
 ## Data setup
