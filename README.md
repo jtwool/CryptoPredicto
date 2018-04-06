@@ -22,7 +22,7 @@
   9. Overall sentiment
  10. Net positive sentiment
  11. Net negative sentiment
- 12. Bag of words
+ 12. Bag of words [bowAndTypes.py](https://github.com/jtwool/CryptoPredicto/blob/master/bowAndTypes.py)
 
 ## Classification / Regression
 ~~1. Arrange features into matrix with target data~~
