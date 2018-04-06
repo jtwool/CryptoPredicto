@@ -13,7 +13,7 @@ def fileToFeatures(f):
   """Get features from filepath"""
   payload = f.split("/")[-1]
   sub,y,m,d,e = payload.split("-")
-  text = reduce(linewiseFeatures,open(f),{}) 
+  text = reduce(linewiseFeatures,open(f),"") 
   return {"text":text,"sub":sub,"year":y,
           "month":m,"day":d,"end":e[:-4]}
 
