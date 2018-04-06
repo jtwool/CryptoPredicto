@@ -1,6 +1,6 @@
 import glob,csv,json, numpy as np,pickle
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.datasets.dump_svmlight_file
+from sklearn.datasets import dump_svmlight_file
 from multiprocessing import Pool
 from functools import reduce
 
