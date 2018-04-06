@@ -1,5 +1,9 @@
 # CryptoPredicto
 
+__JT Wolohan and Logan Jastremski__
+
+_jwolohan@iu.edu | ljastrem@umail.iu.edu_
+
 ## Data setup
 #### Part 1
 ~~Sort posts into threads by subreddit and "time"~~
