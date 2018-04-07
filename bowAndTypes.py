@@ -1,6 +1,6 @@
 import glob,csv,json, numpy as np,pickle
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.datasets import dump_svmlight_file
+from scipy.io import mmwrite 
 from multiprocessing import Pool
 from functools import reduce
 
@@ -25,10 +25,11 @@ if __name__ == "__main__":
    # Get feature matrix
    X = CV.fit_transform([f['text'] for f in fs])
    # Write feature matrix to file
-   dump_svmlight_file(X=X,f="myBOW.sparse.matrix.svm")
+   mmwrite(a=X,target="myBOW.sparse.matrix.mtx")
    # Dump Vocab to file (for the future!)
-   json.dump(CV.vocabulary_,"MyVocab.json")
+   json.dump(list(CV.vocabulary_.keys()),open("MyVocab.json",'w'))
    # Write the file descriptions to a file
    import pandas as pd
    df = pd.DataFrame(fs)
-   df.drop('text').to_csv("./myFileData.csv")
+   print(df)
+   df.drop('text',1).to_csv("./myBOWfeatures.csv")
