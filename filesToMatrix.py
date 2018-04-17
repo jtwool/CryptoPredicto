@@ -66,6 +66,8 @@ def fileToFeatures(f):
 if __name__ == "__main__":
    fs = glob.glob("/scratch/jwolohan/CryptoPredicto/data/*.txt")
    with Pool(processes=24) as p:
-     fs = list(p.map(fileToFeatures,fs))
+     fts = list(p.map(fileToFeatures,fs))
    import pandas as pd
-   pd.DataFrame(fs).to_csv("./myFeatures.csv")
+   df = pd.DataFrame(fts)
+   df['paths']=fs
+   df.to_csv("./myFeaturesWPaths.csv")
